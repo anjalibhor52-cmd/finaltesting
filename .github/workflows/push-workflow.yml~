@@ -1,0 +1,15 @@
+name: Push Workflow
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Success message
+        run: echo "Code pushed successfully!"
+      - name: Show date and time
+        run: date
+      - name: Show current directory
+        run: pwd
